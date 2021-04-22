@@ -64,7 +64,7 @@ class IseedServiceProvider extends ServiceProvider
 
 
 		$userConfigFile    = '/config/issed.php';
-		$packageConfigFile = 'vendor/creative-collisions-limited/iseed/src/config/config.php';
+		$packageConfigFile = __DIR__.'/../../config/config.php';
 		$config            = $this->require($packageConfigFile);
 
 		if (file_exists($userConfigFile)) {
