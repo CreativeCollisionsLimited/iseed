@@ -1,6 +1,6 @@
 <?php
 
-namespace Orangehill\Iseed;
+namespace CreativeCollisionsLimited\Iseed;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Composer;
@@ -59,7 +59,7 @@ class Iseed
      * @param  string   $prerunEvent
      * @param  string   $postunEvent
      * @return bool
-     * @throws Orangehill\Iseed\TableNotFoundException
+     * @throws CreativeCollisionsLimited\Iseed\TableNotFoundException
      */
     public function generateSeed($table, $prefix=null, $suffix=null, $database = null, $max = 0, $chunkSize = 0, $exclude = null, $prerunEvent = null, $postrunEvent = null, $dumpAuto = true, $indexed = true, $orderBy = null, $direction = 'ASC')
     {

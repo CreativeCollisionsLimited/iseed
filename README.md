@@ -1,21 +1,21 @@
 **Inverse seed generator (iSeed)** is a Laravel package that provides a method to generate a new seed file based on data from the existing database table.
 
-[![Build Status](https://travis-ci.org/orangehill/iseed.png)](http://travis-ci.org/orangehill/iseed)
-[![Latest Stable Version](https://poser.pugx.org/orangehill/iseed/v/stable.png)](https://packagist.org/packages/orangehill/iseed) [![Total Downloads](https://poser.pugx.org/orangehill/iseed/downloads.png)](https://packagist.org/packages/orangehill/iseed)
+[![Build Status](https://travis-ci.org/creative-collisions-limited/iseed.png)](http://travis-ci.org/creative-collisions-limited/iseed)
+[![Latest Stable Version](https://poser.pugx.org/creative-collisions-limited/iseed/v/stable.png)](https://packagist.org/packages/creative-collisions-limited/iseed) [![Total Downloads](https://poser.pugx.org/creative-collisions-limited/iseed/downloads.png)](https://packagist.org/packages/creative-collisions-limited/iseed)
 [![Analytics](https://ga-beacon.appspot.com/UA-1936460-35/iseed?useReferrer&flat)](https://github.com/igrigorik/ga-beacon)
 
 ## Installation
 
 ### 1. Require with [Composer](https://getcomposer.org/)
 ```sh
-composer require orangehill/iseed
+composer require creative-collisions-limited/iseed
 ```
 
 **Laravel 5.3.7 and below** or **Laravel 4** need specific version
 
 ```sh
-composer require orangehill/iseed:2.2 # Laravel 5.3.7 and below
-composer require orangehill/iseed:1.1 # Laravel 4
+composer require creative-collisions-limited/iseed:2.2 # Laravel 5.3.7 and below
+composer require creative-collisions-limited/iseed:1.1 # Laravel 4
 ```
 
 ### 2. Add Service Provider (Laravel 5.4 and below)
@@ -24,7 +24,7 @@ Latest Laravel versions have auto dicovery and automatically add service provide
 
 ```php
 // ...
-Orangehill\Iseed\IseedServiceProvider::class,
+CreativeCollisionsLimited\Iseed\IseedServiceProvider::class,
 ```
 
 ## Artisan command options
@@ -294,6 +294,6 @@ To limit number of rows that will be exported from table use Artisan Command Opt
 
 To (re)seed the database go to the Terminal and run Laravel's `db:seed command` (`php artisan db:seed`).
 
-Please note that some users encountered a problem with large DB table exports ([error when seeding from table with many records](https://github.com/orangehill/iseed/issues/4)). The issue was solved by splitting input data into smaller chunks of elements per insert statement. As you may need to change the chunk size value in some extreme cases where DB table has a large number of columns, the chunk size is configurable in iSeed's `config.php` file:
+Please note that some users encountered a problem with large DB table exports ([error when seeding from table with many records](https://github.com/creative-collisions-limited/iseed/issues/4)). The issue was solved by splitting input data into smaller chunks of elements per insert statement. As you may need to change the chunk size value in some extreme cases where DB table has a large number of columns, the chunk size is configurable in iSeed's `config.php` file:
 
 	'chunk_size' => 500 // Maximum number of rows per insert statement

@@ -5,8 +5,8 @@
     "license": "BSD-2-Clause",
     "authors": [
         {
-            "name": "Tihomir Opacic",
-            "email": "tihomir.opacic@orangehilldev.com"
+            "name": "Gabor Eszaki",
+            "email": "gabor@mydutycollect.com"
         }
     ],
     "require": {
@@ -21,21 +21,21 @@
     },
     "autoload": {
         "psr-0": {
-            "Orangehill\\Iseed": "src/"
+            "CreativeCollisionsLimited\\Iseed": "src/"
         },
         "classmap": [
-            "src/Orangehill/Iseed/Exceptions.php"
+            "src/CreativeCollisionsLimited/Iseed/Exceptions.php"
         ]
     },
     "autoload-dev": {
         "psr-4": {
-            "Orangehill\\Iseed\\Tests\\": "tests"
+            "CreativeCollisionsLimited\\Iseed\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Orangehill\\Iseed\\IseedServiceProvider"
+                "CreativeCollisionsLimited\\Iseed\\IseedServiceProvider"
             ]
         }
     },
