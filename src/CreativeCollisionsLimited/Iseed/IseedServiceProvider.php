@@ -34,11 +34,11 @@ class IseedServiceProvider extends ServiceProvider
         $this->registerResources();
 
         $this->app->singleton('iseed', function($app) {
-            return new MdcIseed;
+            return new Iseed;
         });
 
         $this->app->singleton('command.iseed', function($app) {
-            return new MdcIseedCommand;
+            return new IseedCommand;
         });
 
         $this->commands('command.iseed');
